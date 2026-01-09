@@ -1,0 +1,18 @@
+{
+    "train_file": "/home/win/RF/data/ml_1m_label/train.rating",
+    "test_file": "/home/win/RF/data/ml_1m_label/test.rating",
+    "user_file": "/home/win/RF/data/ml_1m_label/users.dat",
+    "movie_file": "/home/win/RF/data/ml_1m_label/movies.dat",
+    "neg_file": "/home/win/RF/data/ml_1m_label/test.negative",
+    "epochs": 20,
+    "num_negatives": 4,
+    "top_k": 10,
+    "device": "cuda",
+    "model": "MLP",
+    "fair_objective": "none",
+    "seed": 2065,
+    "lr": 0.0031075026870625517,
+    "latent_dim": 32,
+    "batch_size": 512,
+    "fair_lambda": 0.0
+}
