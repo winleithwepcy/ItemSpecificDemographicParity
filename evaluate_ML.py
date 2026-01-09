@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 from collections import defaultdict
-from model.fair_pmf import FairPMF
+#from model.fair_pmf import FairPMF
 
 def evaluate_model(model, test_ratings, test_negatives, top_k, device, dataset=None):
     """
