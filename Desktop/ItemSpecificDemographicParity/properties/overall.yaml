@@ -1,0 +1,32 @@
+
+# Dataset configuration
+data:
+  train_file: 'data/ml_1m/train.rating'
+  test_file: 'data/ml_1m/test.rating'
+  neg_file: 'data/ml_1m/test.negative'
+  user_file: 'data/ml_1m/users.dat'
+  movie_file: 'data/ml_1m/movies.dat'
+
+save_path: 'log/'
+seed: 42
+
+# Model configuration
+model:
+  type: 'FairPMF'  # Options: 'GMF', 'MLP', 'NeuMF'
+  latent_dim: 8
+
+# Training configuration
+training:
+  epochs: 20
+  batch_size: 256
+  learning_rate: 0.001
+  num_negatives: 4
+
+# Evaluation configuration
+evaluation:
+  top_k: 10
+
+# System configuration
+system:
+  device: 'auto'  # 'auto', 'cuda', 'cpu'
+  save_path: 'log/best_model.pth'
